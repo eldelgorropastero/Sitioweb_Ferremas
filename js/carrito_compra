@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ferremas - Carrito con PayPal</title>
+<script src="https://www.paypal.com/sdk/js?client-id=TU_CLIENT_ID&currency=USD"></script>
+<style>
+  .producto { margin-bottom: 10px; }
+  #carrito { margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<h2>Productos</h2>
+<div id="productos">
+  <div class="producto" data-name="Martillo" data-price="15.00">
+    Martillo - $15.00
+    <button onclick="agregarAlCarrito('Martillo', 15.00)">Agregar</button>
+  </div>
+  <div class="producto" data-name="Taladro" data-price="80.00">
+    Taladro - $80.00
+    <button onclick="agregarAlCarrito('Taladro', 80.00)">Agregar</button>
+  </div>
+</div>
+
+<h2>Carrito</h2>
+<div id="carrito"></div>
+
+<div id="paypal-button-container"></div>
+
+<script>
+  let carrito = [];
+
+  function agregarAlCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    mostrarCarrito();
+  }
+
+  function mostrarCarrito() {
+    const carritoDiv = document.getElementById('carrito');
+    carritoDiv.innerHTML = '';
+    let total = 0;
+    carrito.forEach((item, i) => {
+      carritoDiv.innerHTML += `<div>${item.nombre} - $${item.precio.toFixed(2)}</div>`;
+      total += item.precio;
+    });
+    carritoDiv.innerHTML += `<b>Total: $${total.toFixed(2)}</b>`;
+    window.totalCompra = total; // para usar en PayPal
+  }
+
+  // Inicializar botón PayPal
+  paypal.Buttons({
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: window.totalCompra ? window.totalCompra.toFixed(2) : '0.00'
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        alert('Pago completado por ' + details.payer.name.given_name);
+        carrito = [];
+        mostrarCarrito();
+      });
+    }
+  }).render('#paypal-button-container');
+
+</script>
+
+</body>
+</html>

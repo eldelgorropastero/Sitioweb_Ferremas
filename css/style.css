@@ -1,3 +1,17 @@
+/* Importación de Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Share+Tech&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto en color claro */
+    font-family: 'Skranji', cursive;
+    font-weight: 700;
+}
+
+/* Header */
 header {
     background-image: url('/img/portada.img');
     background-size: cover;
@@ -5,30 +19,70 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    background-image: url('/img/portada.img');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-hr {
-    border: 5px solid red;
-}
-
-.contenedor {
+    padding: 60px 0;
     text-align: center;
-    color: red;
-    background-color: black;
 }
 
-.imagen-edit {
-    width: auto;
-    height: 300px;
+/* Navbar */
+.navbar {
+    background-color: #1c1c1c; /* Fondo más oscuro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
+
+.navbar .nav-link {
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c; /* Fondo más oscuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.875rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+img {
+    width :auto ; 
+    aspect-ratio: 7/4;
+    object-fit: contain;
+    }
+
+    .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px; /* tamaño pequeño */
+    margin: 0 auto;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+  }
+ .video-container {
+    width: 320px;       /* ancho fijo pequeño */
+    height: 180px;      /* altura fija para 16:9 */
+    margin: 20px auto;  /* centrado con margen arriba y abajo */
+  }
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
