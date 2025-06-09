@@ -97,7 +97,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-           <li class="nav-item"><a class="nav-link active" href="../index.html">Volver a la página principal</a></li>
+           <li class="nav-item"><a class="nav-link active" href="../index.html">Volver a la página de inicio</a></li>
         </ul>
       </div>
     </div>
@@ -108,7 +108,20 @@
     <h2 class="mb-4 text-center">Catálogo de Productos</h2>
     <div class="row">
 
-     
+      <!-- Categorías (sidebar) -->
+      <div class="col-md-3 mb-4">
+        <h5>Categorías</h5>
+        <ul class="list-group category-list">
+          <li class="list-group-item list-group-item-action active" aria-current="true" data-category="all">Todas</li>
+          <li class="list-group-item list-group-item-action" data-category="herramientas-manuales">Herramientas Manuales</li>
+          <li class="list-group-item list-group-item-action" data-category="herramientas-electricas">Herramientas Eléctricas</li>
+          <li class="list-group-item list-group-item-action" data-category="materiales-basicos">Materiales Básicos</li>
+          <li class="list-group-item list-group-item-action" data-category="equipos-seguridad">Equipos de Seguridad</li>
+          <li class="list-group-item list-group-item-action" data-category="tornillos-anclajes">Tornillos y Anclajes</li>
+          <li class="list-group-item list-group-item-action" data-category="fijaciones-adhesivos">Fijaciones y Adhesivos</li>
+          <li class="list-group-item list-group-item-action" data-category="equipos-medicion">Equipos de Medición</li>
+        </ul>
+      </div>
 
       <!-- Productos -->
       <div class="col-md-9">
@@ -230,13 +243,5 @@
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Filtro simple por categoría -->
-  <script>
-    const categories = document.querySelectorAll('.category-list li');
-    const products = document.querySelectorAll('.product-card');
-
-    categories.forEach(cat => {
-      cat.addEventListener('click', () => {
-        categories.forEach(c => c.classList.remove('active'));
-        cat.classList.add('active');
+  
        
