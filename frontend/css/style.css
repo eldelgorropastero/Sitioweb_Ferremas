@@ -86,3 +86,76 @@ img {
     height: 100%;
     border: none;
   }
+
+
+  /* Estilos para la página de Cerrar Sesión */
+.centered-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.message-box {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+/* Css para mi contacto*/
+
+ 
+    body {
+      font-family: 'Skranji', cursive;
+      background-color: #000000;
+      color: #f1f1f1;
+      min-height: 100vh;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Skranji', cursive;
+      color: #f8f9fa;
+    }
+
+    p, label, input, textarea, button {
+      font-family: 'Skranji', cursive;
+      color: #f1f1f1;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #121212;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    input, textarea {
+      background-color: #222;
+      border: 1px solid #444;
+      color: #eee;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #999;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    nav.navbar {
+      font-family: 'Skranji', cursive;
+    }
+  

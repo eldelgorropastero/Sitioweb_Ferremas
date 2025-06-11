@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro - Ferremas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+    
+    
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">FERREMAS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">volver a la pagina principal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Formulario de Registro -->
+  <section class="container my-5" style="max-width: 500px;">
+    <h2 class="text-center mb-4">Crear una cuenta</h2>
+    <form action="procesar_registro.php" method="POST">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="********" required />
+      </div>
+      <div class="mb-3">
+        <label for="confirm_password" class="form-label">Confirmar contraseña</label>
+        <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="********" required />
+      </div>
+      <button type="submit" class="btn btn-success w-100">Registrar</button>
+    </form>
+    <p class="mt-3 text-center">
+      ¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a>.
+    </p>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3 fixed-bottom">
+    <p>© 2025 Ferremas. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap

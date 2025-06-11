@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "nombre": "Taladro Percutor",
+      "descripcion": "Taladro percutor de alta potencia ideal para perforar cemento, piedra y madera. Con empuñadura ergonómica y varias velocidades.",
+      "precio": 129.99,
+      "marca": "Bosch",
+      "categoria": "Herramientas eléctricas",
+      "imagen": "img/carrusel_2.avif"
+    },
+    {
+      "nombre": "Sierra Circular",
+      "descripcion": "Sierra circular con motor de 1500W, perfecta para cortar madera, plástico y otros materiales. Incluye disco de corte de alta calidad.",
+      "precio": 89.95,
+      "marca": "Makita",
+      "categoria": "Herramientas eléctricas",
+      "imagen": "img/sierra_circular.jpg"
+    },
+    {
+      "nombre": "Pintura Acrílica Blanco",
+      "descripcion": "Pintura acrílica de secado rápido, ideal para interiores y exteriores. Alta cobertura y resistencia al agua.",
+      "precio": 18.50,
+      "marca": "Dulux",
+      "categoria": "Pinturas y revestimientos",
+      "imagen": "img/pintura_acrilica.jpg"
+    }
+  ]
+}

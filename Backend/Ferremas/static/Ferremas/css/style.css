@@ -1,0 +1,161 @@
+/* Importación de Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Share+Tech&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto en color claro */
+    font-family: 'Skranji', cursive;
+    font-weight: 700;
+}
+
+/* Header */
+header {
+    background-image: url('/img/portada.img');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1c1c1c; /* Fondo más oscuro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c; /* Fondo más oscuro */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.875rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+img {
+    width :auto ; 
+    aspect-ratio: 7/4;
+    object-fit: contain;
+    }
+
+    .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px; /* tamaño pequeño */
+    margin: 0 auto;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+  }
+ .video-container {
+    width: 320px;       /* ancho fijo pequeño */
+    height: 180px;      /* altura fija para 16:9 */
+    margin: 20px auto;  /* centrado con margen arriba y abajo */
+  }
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+
+  /* Estilos para la página de Cerrar Sesión */
+.centered-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.message-box {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+/* Css para mi contacto*/
+
+ 
+    body {
+      font-family: 'Skranji', cursive;
+      background-color: #000000;
+      color: #f1f1f1;
+      min-height: 100vh;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Skranji', cursive;
+      color: #f8f9fa;
+    }
+
+    p, label, input, textarea, button {
+      font-family: 'Skranji', cursive;
+      color: #f1f1f1;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #121212;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    input, textarea {
+      background-color: #222;
+      border: 1px solid #444;
+      color: #eee;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #999;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    nav.navbar {
+      font-family: 'Skranji', cursive;
+    }
+  
